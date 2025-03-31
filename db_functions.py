@@ -6,12 +6,13 @@ import configparser
 
 def getConfigItems():
     dbConfig = configparser.ConfigParser()
-    config.read("postgres.conf")
-    hostname = config['postgres']['hostname']
-    username = config['postgres']['username']
-    password = config['postgres']['password']
-    database = config['postgres']['database']
+    dbConfig.read("postgres.conf")
+    hostname = dbConfig['postgres']['hostname']
+    username = dbConfig['postgres']['username']
+    password = dbConfig['postgres']['password']
+    database = dbConfig['postgres']['database']
     return hostname, username, password, database
+    
 
 def setupPG():
     hostname, username, password, database = getConfigItems()
