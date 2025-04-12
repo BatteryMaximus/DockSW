@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     while True:
         batSerial = int(getBatSerial(ser))
-        print("Battery Serial Number: {batSerial}")
+        print('Battery Serial Number: {%s}', batSerial)
         time.sleep(2)
 
 
