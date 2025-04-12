@@ -7,8 +7,8 @@ if __name__ == "__main__":
     ser = getSerial('/dev/ttyS0', 115200)
 
     while True:
-        batSerial = getBatSerial(ser)
-        getBatSerial(ser)
+        batSerial = int(getBatSerial(ser))
+        print("Battery Serial Number: {batSerial}")
         time.sleep(2)
 
 
