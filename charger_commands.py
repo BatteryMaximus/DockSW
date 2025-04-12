@@ -1,7 +1,6 @@
 from serial_functions import setupSerial
 
 
-ser = setupSerial('/dev/ttyS0', 115200)
 
 
 def getBatSerial(ser):
