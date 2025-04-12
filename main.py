@@ -1,10 +1,10 @@
 from db_functions import setupPG
 from charger_commands import getBatSerial
-from serial_functions import setupSerial
+from serial_functions import getSerial
 import time
 
 if __name__ == "__main__":
-    ser = setupSerial('/dev/ttyS0', 115200)
+    ser = getSerial('/dev/ttyS0', 115200)
 
     while True:
         batSerial = getBatSerial(ser)

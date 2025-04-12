@@ -1,7 +1,3 @@
-from serial_functions import setupSerial
-
-
-
 
 def getBatSerial(ser):
     command = "G000A;"
